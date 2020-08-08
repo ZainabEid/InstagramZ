@@ -2,7 +2,7 @@
     web application that implements instagram's functionality developed as a practicing project with laravel framework
 
 # Functionality:
-    - showing to the users profiles to all
+    - showing users profiles by id
     - register and login users
     - Auth users can add posts
 
