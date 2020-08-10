@@ -24,7 +24,13 @@ Route::get('/logout',function () {
     return view('welcome');
 })->name('logout');
 
-Route::get('/profile/{user}','profilesController@index')->name('profile.show');
+#################  Profile  ##################
+Route::get('/profile/{user}','ProfilesController@index')->name('profile.show');
+Route::get('/profile/{user}/edit','ProfilesController@edit')->name('profile.edit');
+Route::patch('/profile/{user}','ProfilesController@update')->name('profile.update');
+
+#################  Posts  ##################
 Route::get('/p/create','PostsController@create');
+Route::get('/p/{post}','PostsController@show');
 Route::post('/p','PostsController@store');
 

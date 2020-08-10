@@ -45,6 +45,6 @@ class User extends Authenticatable
 
     # singler because it is one to one
     public function profile(){
-        return $this->hasOne('App\Profile','user_id');
+        return $this->hasOne('\App\Profile','user_id');
     }
 }

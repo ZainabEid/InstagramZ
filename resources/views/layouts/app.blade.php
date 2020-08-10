@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
-                    <div><img src="/svg/InstagramZlogo.svg" style="height:25px; border-right: solid 2px darkgray" class="pr-3" ></div>
+                    <div><img src="/svg/InstagramZlogo.svg" style="height:25px border-right: solid 2px darkgray" class="pr-3" ></div>
                     <div class="pl-3">{{ config('app.name', 'InstagramZ') }}</div>
                     
                 </a>

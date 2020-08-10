@@ -12,10 +12,10 @@ class Profile extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 
+        'user_id', 'caption','description', 
     ];
 
     public function user(){
-       return $this->belongsTo('App\User','user_id');
+       return $this->belongsTo('\App\User','user_id');
     }
 }

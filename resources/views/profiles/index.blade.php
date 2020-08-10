@@ -16,7 +16,12 @@
                 <div>
                     <a href="/p/create">Add new post</a>
                 </div>
+                
                
+            </div>
+            {{-- Edit Profile --}}
+            <div>
+                <a href="/profile/{{$user->id}}/edit">Edit Profile</a>
             </div>
 
             {{-- user account data --}}
@@ -40,7 +45,9 @@
         @foreach ($user->posts as $post )
             
         <div class="col-4">
-        <img src="/storage/{{$post->image}}" class="w-100">
+            <a href="/p/{{ $post->id }}">
+                <img src="/storage/{{$post->image}}" class="w-100">
+            </a>
         </div>
     
         @endforeach

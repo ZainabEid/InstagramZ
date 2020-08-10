@@ -80,21 +80,45 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                   <div class="row">
+                        <div class="col-4">
+                            {{-- slide show --}}
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title title m-b-md">
+                                        INSTAGRAM Z
+                                    </div>
+                                    <div class="card-text">
+                                        <img src="/svg/InstagramZlogo.svg" style="height:200px" >
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                <div class="row mt-5">
+                    <div class="links mt-5">
+                        <a href="https://laravel.com/docs">ABOUT</a>
+                        <a href="https://laracasts.com">HELP</a>
+                        <a href="https://laravel-news.com">PRESS</a>
+                        <a href="https://blog.laravel.com">API</a>
+                        <a href="https://nova.laravel.com">JOPS</a>
+                        <a href="https://forge.laravel.com">PRIVACY</a>
+                        <a href="https://vapor.laravel.com">TERMS</a>
+                        <a href="https://github.com/laravel/laravel">LOCATIONS</a>
+                    </div>
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+
+                
             </div>
+
+            
+
         </div>
+       
     </body>
 </html>
