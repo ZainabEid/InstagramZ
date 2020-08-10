@@ -6,9 +6,9 @@
     - register and login users
     - Auth users can add posts
     - posts image fits in square
+    - Edit profile's data policy
 
 # Up comming functionality:
-    - edit profile data 
     - edit the profile image 
     - searching for users
     - following users
@@ -23,7 +23,9 @@
     
     * Testing: 
         -  '/'  : register new user
-        - add a new record in the table profile from phpMyAdming
+        - edit profile 
         - '/profile/1' : add new post
         - logout and visit '/profile/1'
         - logout and try to add new post
+        - notice 'add profile' link is viewed only for the logged user
+        - logout and visit '/profile/1/edit' 
