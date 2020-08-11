@@ -37,6 +37,17 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    # create an empty profile after created user
+     protected static function boot(){
+        parent::boot();
+        static::created( function ($user) {
+            $user->profile()->create([
+                'title' => $user->username,
+            ]);
+            
+        });
+     }
+
     # plural because it is one to many
     public function posts()
     {
@@ -44,7 +55,9 @@ class User extends Authenticatable
     }
 
     # singler because it is one to one
-    public function profile(){
-        return $this->hasOne('\App\Profile','user_id');
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
     }
+
 }

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-3">
-            <img src="/img/zainabeid.jpg"  class="rounded-circle p-5 img-fluid">
+            <img src="{{ $user->profile->profileImage() }}"  class="rounded-circle p-5 img-fluid w-100">
         </div>
         <div class="col-9 p-5">
             {{-- user name --}}
@@ -13,8 +13,11 @@
                     <div class="pr-5"><h1>{{ $user->username }}</h1></div>
                     <div class="pl-5"><button class="btn btn-primary"> Follow</button></div> 
                 </div>
+                {{-- add new post --}}
                 <div>
-                    <a href="/p/create">Add new post</a>
+                    @can('update', $user->profile)
+                        <a href="/p/create">Add new post</a>
+                    @endcan
                 </div>
                 
                
@@ -35,9 +38,9 @@
 
             {{-- user title and description --}}
             <div class="pt-5">
-                <div class="font-weight-bold"> {{$user->profile->title}} </div>
-                <div > {{$user->profile->description}} </div> 
-                <div><a href="#"> {{$user->profile->url}} </a></div>
+                <div class="font-weight-bold"> {{$user->profile->title ?? ''}} </div>
+                <div > {{$user->profile->description ?? ''}} </div> 
+                <div><a href="#"> {{$user->profile->url ?? ''}} </a></div>
   
             </div>
         </div>

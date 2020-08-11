@@ -6,7 +6,9 @@
     - register and login users
     - Auth users can add posts
     - posts image fits in square
-    - Edit profile's data policy
+    - Edit profile's data and add posts according to policy
+    - Edit profile image and default profile image
+    - 
 
 # Up comming functionality:
     - edit the profile image 
@@ -29,3 +31,4 @@
         - logout and try to add new post
         - notice 'add profile' link is viewed only for the logged user
         - logout and visit '/profile/1/edit' 
+        - login and edit profile title description and image

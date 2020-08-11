@@ -7,8 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Profile extends Model
 {
     protected $guarded =[];
-    
-    public function user(){
-       return $this->belongsTo('\App\User','user_id');
+
+    public function profileImage()
+    {
+        return  "/storage/".(($this->image) ? $this->image : "profile/defaultProfileImage.png");
     }
+    
+    public function user()
+    {
+       return $this->belongsTo(User::class);
+    }
+
 }
