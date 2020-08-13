@@ -10,12 +10,12 @@
     - Edit profile image and default profile image
     - following and unfollowing users and count them
     - home page contains posts of following users
+    - link to profile from  header
     
 
 # Up comming functionality:
     - delete posts
     - sending mails to registered users
-    - Edit header and add link to profile 
     - searching for users
 
 
