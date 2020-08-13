@@ -3,11 +3,6 @@
 @section('content')
 <div class="container">
 
-    {{-- search  --}}
-    <div class="row">
-
-    </div>
-
     {{-- browsing posts --}}
     @foreach ( $posts as $post )
 

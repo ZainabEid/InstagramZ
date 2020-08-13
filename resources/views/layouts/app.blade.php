@@ -38,6 +38,18 @@
 
                     </ul>
 
+                    <!-- Middle Side of Navbar -->
+                    <div class="d-flex justify-content-center">
+                        <!-- Search form -->
+                        <form class="form-inline">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                            <input class="form-control form-control-sm ml-3 w-100" 
+                                    type="text" 
+                                    placeholder="Search"
+                                    aria-label="Search">
+                        </form>
+                    </div>
+
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
