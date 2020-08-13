@@ -27,11 +27,10 @@
         - run the project
     
     * Testing: 
-        -  '/'  : register new user
-        - edit profile 
+        - go to '/'  : register new user
         - '/profile/1' : add new post
-        - logout and visit '/profile/1'
-        - logout and try to add new post
-        - notice 'add profile' link is viewed only for the logged user
-        - logout and visit '/profile/1/edit' 
-        - login and edit profile title description and image
+        - edit profile description and image
+        - logout and visit try to visit '/profile/1' and '/profile/1/edit' //notice policy of user
+        - register more users and add posts
+        - follow and un follow users
+        - go to '/' view the follwing user posts
