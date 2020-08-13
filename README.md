@@ -15,6 +15,7 @@
 # Up comming functionality:
     - delete posts
     - sending mails to registered users
+    - Edit header and add link to profile 
     - searching for users
 
 
