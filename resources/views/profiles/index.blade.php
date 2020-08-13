@@ -7,11 +7,15 @@
             <img src="{{ $user->profile->profileImage() }}"  class="rounded-circle p-5 img-fluid w-100">
         </div>
         <div class="col-9 p-5">
-            {{-- user name --}}
             <div class="d-flex justify-content-between align-items-baseline" >
                 <div class="d-flex">
+                    {{-- user name --}}
                     <div class="pr-5"><h1>{{ $user->username }}</h1></div>
-                    <div class="pl-5"><button class="btn btn-primary"> Follow</button></div> 
+                    
+                    {{-- Follow Button Component --}}
+                    <div class="pl-5">
+                    <follow-button user-id="{{ $user->id }} " follows="{{ $follows }}"> </follow-button>
+                    </div>  
                 </div>
                 {{-- add new post --}}
                 <div>
@@ -31,9 +35,9 @@
 
             {{-- user account data --}}
             <div class="d-flex">
-                <div class="pr-5 "><strong>32k</strong> followers</div>
-                <div class="pr-5 "><strong>132</strong> posts</div>
-                <div class="pr-5 "><strong>200</strong> following</div>
+                <div class="pr-5 "><strong>{{ $user->posts->count() }}</strong> posts</div>
+                <div class="pr-5 "><strong>{{ $user->profile->followers->count() }}</strong> followers</div>
+                <div class="pr-5 "><strong>{{ $user->following->count() }}</strong> following</div>
             </div>
 
             {{-- user title and description --}}

@@ -12,7 +12,14 @@ class Profile extends Model
     {
         return  "/storage/".(($this->image) ? $this->image : "profile/defaultProfileImage.png");
     }
+
+     #  many to many
+     public function followers()
+     {
+         return $this->belongsToMany(User::class);
+     }
     
+     #one to one
     public function user()
     {
        return $this->belongsTo(User::class);

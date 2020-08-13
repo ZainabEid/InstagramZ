@@ -48,6 +48,12 @@ class User extends Authenticatable
         });
      }
 
+    #  many to many
+    public function following()
+    {
+        return $this->belongsToMany(Profile::class);
+    }
+
     # plural because it is one to many
     public function posts()
     {

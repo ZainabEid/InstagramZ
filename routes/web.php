@@ -13,13 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 Route::get('/logout',function () {
     return view('welcome');
 })->name('logout');
@@ -30,7 +27,10 @@ Route::get('/profile/{user}/edit','ProfilesController@edit')->name('profile.edit
 Route::patch('/profile/{user}','ProfilesController@update')->name('profile.update');
 
 #################  Posts  ##################
+Route::get('/', 'PostsController@index')->name('home');
 Route::get('/p/create','PostsController@create');
 Route::get('/p/{post}','PostsController@show');
 Route::post('/p','PostsController@store');
 
+#################  axios  ##################
+Route::post('/follow/{user}', 'FollowsController@store');

@@ -8,12 +8,15 @@
     - posts image fits in square
     - Edit profile's data and add posts according to policy
     - Edit profile image and default profile image
-    - 
+    - following and unfollowing users and count them
+    - home page contains posts of following users
+    
 
 # Up comming functionality:
-    - edit the profile image 
+    - delete posts
+    - sending mails to registered users
     - searching for users
-    - following users
+
 
 # How to test the functionality : 
     * setting: 
