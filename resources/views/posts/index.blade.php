@@ -3,6 +3,12 @@
 @section('content')
 <div class="container">
 
+    {{-- search  --}}
+    <div class="row">
+
+    </div>
+
+    {{-- browsing posts --}}
     @foreach ( $posts as $post )
 
     <div class="row">
@@ -32,6 +38,7 @@
 
     @endforeach
 
+    {{-- grape more posts --}}
     <div class="row">
         <div class=" col-12 d-flex justify-content-center">
             {{$posts->links()}}
