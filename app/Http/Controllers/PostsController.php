@@ -42,9 +42,20 @@ class PostsController extends Controller
         return redirect('/profile/'.auth()->user()->id);
     }
 
-    public function show(\App\Post $post)
+
+    public function show(Post $post)
     {
-        return view('posts.show', compact('post'));  
+        $follows = auth()->user() ? auth()->user()->following->contains($post->user_id) : false; 
+
+        return view('posts.show', compact('post','follows'));  
     }
+
+    public function destroy(Post $post)
+    {
+        // only the account owner can delete his posts !!
+        ($post->user_id == auth()->user()->id) ? $post->delete() : false ;
+        return redirect('/profile/'.auth()->user()->id);
+    }
+
 }
 

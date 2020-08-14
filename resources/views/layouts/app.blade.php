@@ -38,7 +38,7 @@
 
                     </ul>
 
-                    <!-- Middle Side of Navbar -->
+                    <!-- Middle Sidewe of Navbar -->
                     <div class="d-flex justify-content-center">
                         <!-- Search form -->
                         <form class="form-inline">

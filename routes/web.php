@@ -29,6 +29,7 @@ Route::patch('/profile/{user}','ProfilesController@update')->name('profile.updat
 #################  Posts  ##################
 Route::get('/', 'PostsController@index')->name('home');
 Route::get('/p/create','PostsController@create');
+Route::delete('/p/{post}','PostsController@destroy')->name('post.destroy');
 Route::get('/p/{post}','PostsController@show');
 Route::post('/p','PostsController@store');
 
