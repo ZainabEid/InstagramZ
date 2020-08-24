@@ -13,10 +13,10 @@
         <div class="col-4">
 
             {{-- POST HEADER --}}
-            <div class="d-flex justify-content-between align-items-end">
+            <div class="d-flex justify-content-between align-items-center">
             
                 {{-- Post header left side --}}
-                <div class="d-flex align-items-end">
+                <div class="d-flex align-items-center">
                   
                     {{-- profile image --}}
                     <div class="pr-3">

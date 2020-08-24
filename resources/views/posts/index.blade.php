@@ -9,7 +9,9 @@
     <div class="row">
 
         <div class="col-8 offset-2">
-            <img src="/storage/{{ $post->image }}" class="w-100">
+            <a href="/p/{{$post->id}}">
+                <img src="/storage/{{ $post->image }}" class="w-100">
+            </a>
         </div>
 
         <div class="col-8 offset-2">

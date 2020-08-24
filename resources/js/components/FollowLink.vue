@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <a class="breadcrumb" @click="followUser" v-text="buttonText"></a>
+    <div class="">
+        <a class="badge btn" style="color: blue" @click="followUser" v-text="buttonText"></a>
         
     </div>
 </template>

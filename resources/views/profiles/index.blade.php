@@ -49,6 +49,7 @@
             </div>
         </div>
     </div>
+
     <div class="row pt-4">
         {{-- user posts --}}
         @foreach ($user->posts as $post )
@@ -63,5 +64,6 @@
        
 
     </div>
+    
 </div>
 @endsection
